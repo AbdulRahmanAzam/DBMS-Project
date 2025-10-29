@@ -1,0 +1,111 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-main) 0%, var(--primary-accent) 100%);
+  color: var(--neutral-white);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--neutral-white);
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+.about-content {
+  padding: 5rem 2rem;
+  background-color: var(--background-main);
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 0 auto var(--spacing-xxl);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--primary-main);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--neutral-text);
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.offer-item {
+  background-color: var(--background-secondary);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--primary-main);
+}
+
+.offer-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--neutral-text);
+}
+
+.offer-item p {
+  font-size: 1rem;
+  color: var(--neutral-text-light);
+}
+
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--spacing-lg);
+}
+
+.trust-list li {
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--secondary-main);
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.trust-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  color: var(--secondary-main);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    padding: 3rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+}
