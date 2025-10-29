@@ -46,7 +46,8 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const { confirmPassword, ...registrationData } = formData;
+      const registrationData = { ...formData };
+      delete registrationData.confirmPassword;
       const response = await authAPI.register(registrationData);
       const { user, token } = response.data;
       
